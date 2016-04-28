@@ -7,6 +7,7 @@ from imagekit.processors import ResizeToFill
 
 class Album(models.Model):
     name = models.CharField(max_length=255)
+    desc = models.TextField()
 
     def __unicode__(self):
         return self.name

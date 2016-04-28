@@ -20,9 +20,9 @@ from django.conf.urls.static import static
 from main import views as main_views
 
 urlpatterns = [
-    url(r'^$', main_views.home, name='home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^main/', include('main.urls', namespace='main')),
+    url(r'^$', main_views.home, name='home'),
+    url(r'^', include('main.urls', namespace='main')),
     url(r'^bookings/', include('bookings.urls', namespace='bookings')),
     url(r'rooms/', include('rooms.urls', namespace='rooms')),
     url(r'guests/', include('guests.urls', namespace='guests'))

@@ -1,13 +1,13 @@
 €}q(Uguests.admin]Urooms.migrations.0001_initial]qU	MigrationqaUbookings.migrations]Uguests.models]q(UGuestqUBandqUAddressqeU
 rooms.urls]qUurlpatternsq	aUmanage]Ubookings]Uguests.forms]q
 (UGuestRegisterationFormqUGuestProfileFormqeU
-main.admin]qUGalleryAdminqaUguests.apps]qUGuestsConfigqaUguests]Ubookings.forms]qUBookingFormqaUrooms.models]q(URoomqUFacilityqeU
-main.views]q(UaboutqUcontactqUservicesqUhomeqUgalleryqeUhostel]U
-rooms.apps]qURoomsConfigqaUguests.migrations.0001_initial]qhaUbookings.models]qUBookingq aUguests.urls]q!h	aUrooms.migrations]Uhostel.urls]q"h	aU	main.apps]q#U
-MainConfigq$aUrooms.admin]Uhostel.settings]q%(U	DATABASESq&UMIDDLEWARE_CLASSESq'UROOT_URLCONFq(ULANGUAGE_CODEq)UUSE_I18Nq*U
-SECRET_KEYq+UBASE_DIRq,U	TEMPLATESq-USTATIC_ROOTq.U	TIME_ZONEq/UWSGI_APPLICATIONq0UALLOWED_HOSTSq1UAUTH_PASSWORD_VALIDATORSq2U
-STATIC_URLq3UUSE_L10Nq4UDEBUGq5UUSE_TZq6UINSTALLED_APPSq7U
-MEDIA_ROOTq8USTATICFILES_DIRSq9U	MEDIA_URLq:eUmain]Ubookings.urls]q;h	aUbookings.views]q<(Uindexq=Ubookingsq>Ubookingq?Udelete_bookingq@eUguests.views]qA(UlistqBUlogout_viewqCU
-login_viewqDUregisterqEeUrooms.views]qF(h=UdetailqGU	faciltiesqHeU
-main.tests]Urooms.tests]Umain.migrations]U bookings.migrations.0001_initial]qIhaUmain.models]qJUGalleryqKaUguests.migrations]Ubookings.tests]Uhostel.wsgi]qLUapplicationqMaU(rooms.migrations.0002_auto_20160410_0308]qNhaUguests.tests]Umain.migrations.0001_initial]qOhaU	main.urls]qPh	aUbookings.admin]U
-main.forms]qQ(UUserRegisterationFormqRU	GuestFormqSU	LoginFormqTeUbookings.apps]qUUBookingsConfigqVaUrooms]u.
+main.admin]qUGalleryAdminqaUguests.apps]qUGuestsConfigqaUguests]Uguests.migrations]Urooms.models]q(URoomqUFacilityqeU
+main.views]q(UalbumqUaboutqUgalleryqUcontactqUservicesqUhomeqeUhostel]U
+rooms.apps]qURoomsConfigqaUguests.migrations.0001_initial]qhaUbookings.models]qUBookingqaUguests.urls]q h	aUrooms.migrations]Uhostel.urls]q!h	aU	main.apps]q"U
+MainConfigq#aUrooms.admin]Uhostel.settings]q$(U	DATABASESq%UMIDDLEWARE_CLASSESq&UROOT_URLCONFq'ULANGUAGE_CODEq(UUSE_I18Nq)U
+SECRET_KEYq*UBASE_DIRq+U	TEMPLATESq,USTATIC_ROOTq-U	TIME_ZONEq.UWSGI_APPLICATIONq/UALLOWED_HOSTSq0UAUTH_PASSWORD_VALIDATORSq1U
+STATIC_URLq2UUSE_L10Nq3UDEBUGq4UUSE_TZq5UINSTALLED_APPSq6U
+MEDIA_ROOTq7USTATICFILES_DIRSq8U	MEDIA_URLq9eU"main.migrations.0002_gallery_cover]q:haUmain]Ubookings.admin]Ubookings.views]q;(Uindexq<Ubookingsq=Ubookingq>Udelete_bookingq?eUguests.views]q@(UlistqAUlogout_viewqBU
+login_viewqCUregisterqDeUrooms.views]qE(h<UdetailqFU	faciltiesqGeU
+main.tests]Urooms.tests]Umain.migrations]U bookings.migrations.0001_initial]qHhaUmain.models]qI(UAlbumqJUGalleryqKeUbookings.forms]qLUBookingFormqMaUbookings.tests]Uhostel.wsgi]qNUapplicationqOaU(rooms.migrations.0002_auto_20160410_0308]qPU	MigrationqQaUguests.tests]Urooms]Umain.migrations.0001_initial]qRhaU	main.urls]qSh	aUbookings.urls]qTh	aU
+main.forms]qU(UUserRegisterationFormqVU	GuestFormqWU	LoginFormqXeUbookings.apps]qYUBookingsConfigqZau.
