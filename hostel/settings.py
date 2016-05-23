@@ -25,7 +25,7 @@ SECRET_KEY = '!9j0x7+yh!i*fgx=pkuxak=7@hj&)wc1i!9x=)+&v-5rs*gmjz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['kamsurf.kerokuapp.com']
+ALLOWED_HOSTS = ['kamsurf.herokuapp.com']
 
 # Application definition
 
