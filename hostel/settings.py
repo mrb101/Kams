@@ -23,10 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!9j0x7+yh!i*fgx=pkuxak=7@hj&)wc1i!9x=)+&v-5rs*gmjz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['kamsurf.kerokuapp.com']
 
 # Application definition
 
@@ -80,16 +79,22 @@ WSGI_APPLICATION = 'hostel.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd5kkotdhr1iuo4',
-        'USER': 'qpvooiodwkrhpy',
-        'PASSWORD': 'y9jj_ukk3cujMdSuv4lurVepnL',
-        'HOST': 'ec2-54-235-195-226.compute-1.amazonaws.com',
+        'NAME': 'd85it3amrfun3s',
+        'USER': 'vnfeqsgfbrevld',
+        'PASSWORD': 'NpshdmSXDMxXl1eQQO5XVIf9C4',
+        'HOST': 'ec2-23-21-164-237.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
+
+import dj_database_url
+
+DATABASES['default'] = dj_database_url.config()
 
 
 # Password validation
@@ -135,3 +140,5 @@ STATICFILES_DIRS = (
     )
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'staticfiles')
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media_cdn')
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
