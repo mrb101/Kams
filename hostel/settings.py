@@ -130,6 +130,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -140,6 +141,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
     )
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = os.path.join((BASE_DIR, 'media_cdn')
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
