@@ -56,19 +56,22 @@
             </div>
             <!-- /.container -->
         </nav>
-            <div class="col-xs-12">
-                {% if messages %}
-                <div class="messages">
-                    {% for message in messages %}
-                    <p{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</p>
-                    {% endfor %}
-                </div>
-                {% endif %}
+
+        <div class="col-xs-12">
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <p{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
             </div>
+            {% endif %}
+        </div>
+
     {% block body %}
 
     {% endblock %}
-<!-- Footer -->
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -108,7 +111,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="{% static "css/bootstrap.min.js" %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="{% static "js/myscripts.js" %}"></script>
   </body>
 </html>
