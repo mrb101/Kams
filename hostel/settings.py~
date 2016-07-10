@@ -148,7 +148,7 @@ S3_URL = 'https://%s.s3.amazonaws.com' % S3_STORAGE_BUCKET_NAME
 
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-DEFAULT_FILE_STORAGE = 'hostel.s3utils.backends.MediaRootS3BotoStorage'
+DEFAULT_FILE_STORAGE = 'hostel.s3utils.MediaRootS3BotoStorage'
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 

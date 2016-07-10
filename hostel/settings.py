@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+from hostel import s3utils
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -148,7 +149,7 @@ S3_URL = 'https://%s.s3.amazonaws.com' % S3_STORAGE_BUCKET_NAME
 
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-DEFAULT_FILE_STORAGE = 'hostel.s3utils.MediaRootS3BotoStorage'
+DEFAULT_FILE_STORAGE = 'hostel.s3utils.gMediaRootS3BotoStorage'
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
