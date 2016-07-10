@@ -155,7 +155,7 @@ STATICFILES_DIRS = (
 
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
-MEDIA_URL = 'http://%s.s3.amazonaws.com/kams/' % S3_BUCKET_NAME
+MEDIA_URL = 'http://%s.s3.amazonaws.com/media' % S3_BUCKET_NAME
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
