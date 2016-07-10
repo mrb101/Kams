@@ -19,7 +19,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 # S3 Buket settings
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-S3_BUCKET_NAME = 'kams'
+S3_STORAGE_BUCKET_NAME = 'kams'
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
@@ -155,7 +155,7 @@ STATICFILES_DIRS = (
 
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
-MEDIA_URL = 'https://kams.s3.amazonaws.com/media/'
+MEDIA_URL = 'https://%s.s3.amazonaws.com/media/' % S3_STORAGE_BUCKET_NAME
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
