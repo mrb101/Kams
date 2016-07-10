@@ -97,9 +97,9 @@ DB_PASSWORD = os.environ.get('DB_PASSWORD')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd85it3amrfun3s',
-        'USER': 'DB_USER',
-        'PASSWORD': 'DB_PASSWORD',
+        'NAME': 'DB_USER',
+        'USER': 'DB_PASSWORD',
+        'PASSWORD': 'NpshdmSXDMxXl1eQQO5XVIf9C4',
         'HOST': 'ec2-23-21-164-237.compute-1.amazonaws.com',
         'PORT': '5432',
     }
