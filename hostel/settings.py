@@ -143,7 +143,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # S3 Buket settings
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-S3_STORAGE_BUCKET_NAME = 'kams'
+S3_STORAGE_BUCKET_NAME = os.environ.get('S3_STORAGE_BUCKET_NAME')
 S3_URL = 'https://%s.s3.amazonaws.com' % S3_STORAGE_BUCKET_NAME
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
