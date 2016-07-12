@@ -21,9 +21,9 @@ def album(request):
     return render(request, template, context)
 
 
-def gallery(request):
+def gallery(request, pk):
     template = 'main/gallery.html'
-    images = Gallery.objects.all()
+    images = Gallery.objects.filter(album=pk)
     context = {'images': images}
     return render(request, template, context)
 
